@@ -62,7 +62,7 @@ To make it two-dimensional, we'll need to define the columns and rows. Let's cre
 
 To set a gap between rows and columns you can use ```grid-column-gap``` and ```grid-row-gap``` or ```grid-gap```. The good thing is, that the gaps are only created between the items and not to the outside of the grid.
 
-Let's add grid-gap to our example CSS:
+Let's add ```grid-gap``` to our example CSS:
 
 ```
 .container {
@@ -79,7 +79,7 @@ Let's add grid-gap to our example CSS:
 
 
 
-I am using the ```grid-gap```grid-gap property to create a gap of 20px between my columns and rows. This property is a shorthand for ```grid-column-gap``` and ```grid-row-gap```.
+I am using the ```grid-gap``` property to create a gap of 20px between my columns and rows. This property is a shorthand for ```grid-column-gap``` and ```grid-row-gap```.
 
 ## Explicit And Implicit Grid
 
@@ -141,7 +141,7 @@ The grid can only grow in one direction, so it adds either rows or columns. As a
 
 ## The Repeat() Function
 
-To avoid a lot of typing with columns that are all the same width, we will use the ```repeat()``` function. The 1st value in ```repeat()``` stands for the number of repetitions. Then the desired grid properties follow.
+To avoid a lot of typing with columns that are all the same width, we will use the ```repeat()``` function. The first value in ```repeat()``` stands for the number of repetitions. Then the desired grid properties follow.
 
 Here's an example for the ```repeat()``` function: 
 
@@ -234,7 +234,7 @@ Let's see how to determine the width of an item inside the grid container with t
 
 If you change grid elements, gaps may occur in the grid, as you can see in the previous example.
 
-With the ```grid-auto-flow``` property you can control the auto-placement algorithm. Items that run outside the defined grid tracks, will show in generated rows. That is, unless we set ```grid-auto-flow```grid-auto-flow to column.
+With the ```grid-auto-flow``` property you can control the auto-placement algorithm. Items that run outside the defined grid tracks, will show in generated rows. That is, unless we set ```grid-auto-flow``` to column.
 
 ```
 grid-auto-flow: column;
@@ -340,7 +340,7 @@ Feel free to check out the behavior of ```minmax()``` on different devices:
 
 When to use ```auto-fill``` and when ```auto-fit``` can be a bit confusing, but it makes a lot more sense when you visualize it.
 
-```Auto-fill```- fills the row with as many columns as it can fit.
+```Auto-fill```- Fills the row with as many columns as it can fit.
 
 ```
 .container {
@@ -469,7 +469,7 @@ container {
 
 | ![CSS Grid with ### - Self on the Item Itself](/screenshots/self-on-the-item-itself.png) |
 |:--:|
-| *CSS Grid with ### - Self on the Item Itself* |
+| *CSS Grid with *** - Self on the Item Itself* |
 
 Here is the short version for ```justify-***```and ```align-***```:
 
