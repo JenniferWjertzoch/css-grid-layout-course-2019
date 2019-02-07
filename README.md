@@ -33,6 +33,7 @@ To turn our container div into a grid, we give it a display of grid:
 But, this doesn't do anything yet, as we haven't defined how we want our grid to look like. It'll position six div's on top of each other.
 
 ![Basic CSS Grid](/screenshots/basic-css-grid.png)
+<center>Basic CSS Grid</center>
 
 
 ## Defining Columns and Rows
