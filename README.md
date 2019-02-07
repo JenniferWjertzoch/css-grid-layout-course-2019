@@ -1,4 +1,4 @@
-#Things I've Learned About CSS Grid Layout
+# Things I've Learned About CSS Grid Layout
 
 CSS Grid you can create complex web designs. It is very intuitive and very well supported by the major browsers. In this article I will show how to build layouts in CSS Grids.
 
@@ -93,7 +93,7 @@ Grid lines are dividing the grid on the horizontal and vertical axis. They start
 
 The explicit part uses the grid-template-columns and grid-template-rows properties. Here you specify how many columns and rows the container has and how wide they should be.
 
-Explicit Grid with Closing Line at Bottom
+![Explicit Grid with Closing Line at Bottom](/screenshots/explicit-grid-with-closing-line.png)
 
 Check the continuous line "closing" the grid at the bottom, after the second row. This line encloses the explicit grid.
 You can also use a shorthand to define rows and columns. The row track-listing coming before a forward slash, columns afterwards.
@@ -112,7 +112,8 @@ Let's give the rows a height of 50px and see what happens:
  grid-auto-rows: 50px;
  ```
 
-CSS Grid with Implicit Grid
+![CSS Grid with Implicit Grid](/screenshots/css-grid-with-implicit-grid.png)
+
 
 Now all added lines will be 50px high.
 
@@ -156,7 +157,8 @@ For three columns with an equal width, we can use fractional units now, instead 
 
 This way, you can add as many child elements as possible, while the widths stays the same on all child elements.
 
-CSS Grid using Fractional Units
+![CSS Grid using Fractional Units](/screenshots/css-grid-using-fractional-units.png)
+
 
 Since I didn't set a fixed width, the elements now take up as much space as possible.
 
@@ -174,7 +176,7 @@ You can also combine the fr unit with any other CSS units of course. For instanc
 }
  ```
 
-CSS Grid with the Ratio of 60% 1fr 2fr
+![CSS Grid with the Ratio of 60% 1fr 2fr](/screenshots/css-grid-with-ratio.png)
 
 ### Sizing Individual Grid Items
 
@@ -199,7 +201,7 @@ Let's see how to determine the width of an item inside the grid container with t
 }
  ```
 
-CSS Grid Spanning Item Five across Three Columns
+![CSS Grid Spanning Item Five across Three Columns](/screenshots/spanning-item-five-across-three-columns.png)
 
 ## The Grid-Auto-Flow Property
 
@@ -224,7 +226,7 @@ The dense keyword will place smaller items in the gaps and fill the grid as good
 }
  ```
 
-CSS Grid with Grid-Auto-Flow: Dense
+![CSS Grid with Grid-Auto-Flow: Dense](/screenshots/grid-auto-flow-dense.png)
 
 ## The Span Keyword
 
@@ -250,7 +252,7 @@ You can also tell the grid item1 from our previous example how wide you want it 
 }
  ```
 
-CSS Grid with Grid-Column Shorthand Property
+![CSS Grid with Grid-Column Shorthand Property](/screenshots/grid-column-shorthand-property.png)
 
 If you want your item to span the entire width of the grid, but don't know how wide your grid is, you can set grid-column:1/-1 .
 
@@ -268,7 +270,7 @@ With CSS grids you can position the elements in the grid as you like. You can mo
 }
  ```
 
-CSS Grid using Grid-Column-Start and Grid-Column-End
+![CSS Grid using Grid-Column-Start and Grid-Column-End](/screenshots/grid-column-start-and-grid-column-end.png)
 
 And there is a simpler way of writing the syntax above:
 
@@ -315,7 +317,7 @@ Auto-fill - fills the row with as many columns as it can fit.
 }
  ```
 
-CSS Grid using Auto-Fill Keyword for Repeat
+![CSS Grid using Auto-Fill Keyword for Repeat](/screenshots/auto-fill-keyword.png)
 
 Auto-fit- Columns take up any available space.
 
@@ -331,7 +333,7 @@ Auto-fit- Columns take up any available space.
 }
  ```
 
-CSS Grid using Auto-Fit Keyword for Repeat
+![CSS Grid using Auto-Fit Keyword for Repeat](/screenshots/auto-fit-keyword.png)
 
 ## Six Properties for Justification and Alignment
 
@@ -349,13 +351,14 @@ With justify-items you can justify the grid items along the row axis. With align
 }
  ```
 
-CSS Grid with Justify-Content and Start
+![CSS Grid with Justify-Content and Start](/screenshots/justify-content-start.png)
 
-CSS Grid with Justify-Content and Center
+![CSS Grid with Justify-Content and Center](/screenshots/justify-content-center.png)
 
-CSS Grid with Justify-Content and Space-Around
+![CSS Grid with Justify-Content and Space-Around](/screenshots/justify-content-space-around.png)
 
-CSS Grid with Justify-Content and Space-Between
+![CSS Grid with Justify-Content and Space-Between](/screenshots/justify-content-space-between.png)
+
 
 ### Align-Content
 
@@ -372,7 +375,7 @@ Give the container a fixed height of 500px and the items will stretch over the w
 }
  ```
 
-CSS Grid with a Fixed Height of 500px.
+![CSS Grid with a Fixed Height of 500px](/screenshots/css-grid-fixed-height.png)
 
 ```
 container {
@@ -386,7 +389,7 @@ container {
 }
  ```
 
-CSS Grid with Align-Content Space-Around
+![CSS Grid with Align-Content Space-Around](/screenshots/align-content-space-around.png)
 
 ### HTML
 
@@ -413,9 +416,9 @@ CSS Grid with Align-Content Space-Around
 }
  ```
 
-CSS Grid with *** - Self on the Item Itself
+![CSS Grid with *** - Self on the Item Itself](/screenshots/self-on-the-item-itself.png)
 
-Here is the short version for justify-*** and align-**:
+Here is the short version for justify-*** and align-***:
 
 ```
 place-items: center center;
