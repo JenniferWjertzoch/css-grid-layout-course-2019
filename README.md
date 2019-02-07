@@ -471,7 +471,7 @@ container {
 |:--:|
 | *CSS Grid with *** - Self on the Item Itself* |
 
-Here is the short version for ```justify-***```and ```align-***```:
+Here is the short version for ```justify-***``` and ```align-***```:
 
 ```
 place-items: center center;
@@ -481,13 +481,13 @@ place-items: center center;
 
 ## Further Reading
 
-* Rachel Andrew Grid by Example - Here you can learn everything about CSS Grid Layout.
+* **Rachel Andrew** [Grid by Example](https://gridbyexample.com/) - Here you can learn everything about CSS Grid Layout.
 
-* Jen Simmons Learn CSS Grid - I follow Layout Land on Youtube for quite a while now.
+* **Jen Simmons** [Learn CSS Grid](http://jensimmons.com/) - I follow Layout Land on Youtube for quite a while now.
 
-* Wes Bos CSS Grid Tutorial - It was my first Wes Bos Course and I found it very helpful and inspiring.
+* **Wes Bos** [CSS Grid Tutorial](https://cssgrid.io/) - It was my first Wes Bos Course and I found it very helpful and inspiring.
 
-* CSS Tricks' Complete Guide to CSS Grid - I found it very good to clarify a few definitions. They also offer some great illustrative examples.
+* **CSS Tricks'** [Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - I found it very good to clarify a few definitions. They also offer some great illustrative examples.
 
 
 ---
