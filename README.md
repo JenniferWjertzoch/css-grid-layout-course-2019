@@ -64,6 +64,8 @@ To set a gap between rows and columns you can use ```grid-column-gap``` and ```g
 
 Let's add ```grid-gap``` to our example CSS:
 
+### CSS
+
 ```
 .container {
     display: grid;
@@ -84,6 +86,8 @@ I am using the ```grid-gap``` property to create a gap of 20px between my column
 ## Explicit And Implicit Grid
 
 Grid lines are dividing the grid on the horizontal and vertical axis. They start with number one. If you open the Grid Inspector Tools on Firefox, this becomes much clearer.
+
+### CSS
 
 ```
 .container {
@@ -206,7 +210,7 @@ You can also combine the ```fr``` unit with any other CSS units of course. For i
 
 Let's see how to determine the width of an item inside the grid container with the ```span``` keyword. I am going to span item #5 across three column tracks. All the items from item #6 onwards have skipped one spot to the next available cell.
 
-### HTML
+### CSS
 
 ```
 .container {
@@ -215,8 +219,6 @@ Let's see how to determine the width of an item inside the grid container with t
     grid-template-rows: repeat(2, 100px);
 }
  ```
-
-### CSS
 
 ```
 .item5 {
@@ -262,7 +264,7 @@ The ```dense``` keyword will place smaller items in the gaps and fill the grid a
 
 You can also tell the grid item1 from our previous example how wide you want it to span and where you want it to end. You can use the ```grid-template-column``` keyword to avoid specifying end lines when items should span more than one column or row.
 
-### HTML
+### CSS
 
 ```
 .container {
@@ -342,6 +344,8 @@ When to use ```auto-fill``` and when ```auto-fit``` can be a bit confusing, but 
 
 ```Auto-fill```- Fills the row with as many columns as it can fit.
 
+### CSS
+
 ```
 .container {
     border:1px solid #1D1E2C;
@@ -380,6 +384,8 @@ With ```justify-items``` you can justify the grid items along the row axis. With
 
 ### Justify-Content
 
+### CSS
+
 ```
 .container {
     border: solid 1px #1D1E2C;
@@ -409,6 +415,8 @@ With ```justify-items``` you can justify the grid items along the row axis. With
 ### Align-Content
 
 Give the container a fixed height of 500px and the items will stretch over the whole height.
+
+### CSS
 
 ```
 .container {
@@ -442,7 +450,7 @@ container {
 |:--:|
 | *CSS Grid with Align-Content Space-Around* |
 
-### HTML
+### CSS
 
 ```
 .container {
@@ -455,8 +463,6 @@ container {
     justify-content: space-around;
 }
  ```
-
-### CSS
 
 ```
 .item1{
