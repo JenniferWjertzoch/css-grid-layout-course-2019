@@ -2,6 +2,28 @@
 
 CSS Grid you can create complex web designs. It is very intuitive and very well supported by the major browsers. In this article I will show how to build layouts in CSS Grids.
 
+## Table of Content
+
+1. [Setting Up CSS Grid](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#setting-up-cssgrid)
+2. [Defining Columns and Rows](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#defining-columns-androws)
+3. [Adding Grid-Gap Between Items](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#adding-grid-gap-betweenitems)
+4. [Explicit And Implicit Grid](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#explicit-and-implicitgrid)
+    1. [Explicit](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#explicit)
+    2. [Implicit](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#implicit)
+5. [The Repeat() Function](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#the-repeatfunction)
+6. [Fractional Units fr](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#fractional-units)
+    1. [Combine fr with other CSS Units](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#combine-fr-with-other-css-units)
+7. [Sizing Individual Grid Items](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#sizing-individual-griditems)
+8. [The Grid-Auto-Flow Property](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#the-grid-auto-flow-property)
+9. [The Span Keyword](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#the-spankeyword)
+10. [Positioning Items in the Grid](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#positioning-items-in-thegrid)
+11. [The Minmax() Function](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#the-minmaxfunction)
+12. [Auto-Fill vs. Auto-Fit](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#auto-fill-vsauto-fit)
+13. [Six Properties for Justification and Alignment](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#six-properties-for-justification-and-alignment)
+    1. [Justify-Content](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#justify-content)
+    2. [Align-Content](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#align-content)
+14. [Further Reading](https://github.com/JenniferWjertzoch/CSS-Grid-Layout-Course-2019#further-reading)
+
 
 ## Setting Up CSS Grid
 
@@ -162,7 +184,7 @@ Here's an example for the ```repeat()``` function: 
 
 Since we didn't change anything, the grid should still look exactly the same.
 
-## Fractional Units
+## Fractional Units fr
 
 The ```fr``` unit works as one fraction of the available space. You can calculate flexible layouts without percentages, pixels or em.
 
@@ -188,7 +210,7 @@ This way, you can add as many child elements as possible, while the widths stays
 
 Since I didn't set a fixed width, the elements now take up as much space as possible.
 
-### Combine fr with other CSS units
+### Combine fr with other CSS Units
 
 You can also combine the ```fr``` unit with any other CSS units of course. For instance, in the example below, I used the ```60% 1fr 2fr``` ratio for my grid.
 
