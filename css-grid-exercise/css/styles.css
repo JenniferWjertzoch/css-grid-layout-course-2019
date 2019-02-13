@@ -1,0 +1,330 @@
+.trigger {
+    background: #e8a4c9;
+    border: none;
+    color: #fff;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 22% auto 0 auto;
+    padding: 30px 30px;
+    text-align: center;
+    width: 150px;
+}
+
+.trigger a {
+    color: #fff;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.overlay {
+    background: #959595;
+    height: 100%;
+    opacity:0;
+    position: fixed;
+    pointer-events: none;
+    transition: opacity 400ms ease-in;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+}
+
+.overlay:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup {
+    height: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+    max-height: 600px;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+}
+
+.close {
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    text-decoration: none;
+    top: 45px;
+    right: 30px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 2.5fr;
+}
+
+.box {
+    background-color: #fff;
+    color: #e8a4c9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.box .box {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.innerText {
+    display: none;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.textInfo {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #e8a4c9;
+    grid-column: 1 / 5;
+    margin: 10px;
+    padding: 10px;
+}
+
+.textInfo h2 {
+    display: none;
+    margin: 0;
+}
+
+.textInfo:hover {
+    background-color: #e8a4c9;
+    color: #fff;
+}
+
+.textInfo:hover h2{
+    display: block;
+}
+
+.pastries {
+    background-color: #fff0;
+    display: grid;
+    grid-gap: 10px;
+    grid-column: 1 / 5;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.cupcake {
+    background: white url(../img/024-cupcake.png);
+    grid-column: 1;
+    grid-row:  1;
+}
+
+.cheeseCake {
+    background: white url(../img/014-cake.png);
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.cookies {
+    background: white url(../img/028-cookie.png);
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.caramel {
+    background: white url(../img/034-honey.png);
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.chocolate {
+    background: white url(../img/029-chocolate-bar.png);
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.applePie {
+    background: white url(../img/007-pie.png);
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.peanutButterCups {
+    background: white url(../img/017-cracker.png);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.doughnut {
+    background: white url(../img/035-doughnut.png);
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.iceCream {
+    background: white url(../img/030-ice-cream.png);
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.croissant {
+    background: white url(../img/023-croissant.png);
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.box .cupcake,
+.cheeseCake,
+.cookies,
+.caramel,
+.chocolate,
+.applePie,
+.peanutButterCups,
+.doughnut,
+.iceCream,
+.croissant {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    height: 30px;
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 10px;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.item:hover {
+    background-color: #e8a4c9;
+}
+
+@media (min-width: 800px)  {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .pastries {
+        display: grid;
+        grid-column: 1 / 2;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .textInfo {
+        grid-column-start: 2;
+        grid-row: 1;
+    }
+
+    .innerText {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .box .cupcake,
+    .cheeseCake,
+    .cookies,
+    .caramel,
+    .chocolate,
+    .applePie,
+    .peanutButterCups,
+    .doughnut,
+    .iceCream,
+    .croissant {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50px;
+        height: 50px;
+    }
+
+    .cupcake {
+        background: white url(../img/024-cupcake.png);
+        grid-column: 1;
+        grid-row:  1;
+    }
+
+    .cheeseCake {
+        background: white url(../img/014-cake.png);
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .cookies {
+        background: white url(../img/028-cookie.png);
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .caramel {
+        background: white url(../img/034-honey.png);
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .chocolate {
+        background: white url(../img/029-chocolate-bar.png);
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .applePie {
+        background: white url(../img/007-pie.png);
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .peanutButterCups {
+        background: white url(../img/017-cracker.png);
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .doughnut {
+        background: white url(../img/035-doughnut.png);
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .iceCream {
+        background: white url(../img/030-ice-cream.png);
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .croissant {
+        background: white url(../img/023-croissant.png);
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    .box .cupcake,
+    .cheeseCake,
+    .cookies,
+    .caramel,
+    .chocolate,
+    .applePie,
+    .peanutButterCups,
+    .doughnut,
+    .iceCream,
+    .croissant {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50px;
+        height: 50px;
+    }
+}
